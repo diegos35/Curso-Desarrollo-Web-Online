@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--conjutno de caracteres-->
+    <title>Diego caviedes</title>
+    <link rel="icon" href="imagenes/imagen.png">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <!-- <style> 
+    header{ //estilos en  TAG 
+        background: pink;
+    }
+    </style>  -->
+</head>
+<body>
+    <div class="flexbox">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+    <header class="header"> 
+
+        <!-- <header style="color:red;background: blue;"> ESTILOS en linea -->
+        <div>
+            <figure class="logo">
+                <img src="imagenes/angular.jpg" alt="logo de:" width="500" height="200"> <!--el Alt sirve para cuando no carga la imagen-->         
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li><a class="link" href="#portafolio">Portafolio</a></li> <!--el # sirve para referirnos a la misma pagina-->
+                    <li><a class="link" href="#Experiencia">Experiencia</a></li> <!--llega al id de la etiqueta-->
+                    <li><a class="link" href="#contacto">Trabajemos juntos</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Hola soy <strong>Diego Caviedes </strong>Desarrollador full stack <br> frameworks como <strong>angular y laravel</strong></h1>
+        <!-- <img src="imagenes/pwa.jpeg" alt="imagen principal">     -->
+    </section>
+    <section id="portafolio" class="portfolio">
+        <h2>Portafolio de mis proyectos</h2>
+        <article class="project"> <!--project seria el objeto OOCSS-->
+            <div class="project-details">
+                <h3 class="project-title">Platzi video</h3>
+                <h6 class="project-course">react native</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/04/2020</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong>platzi.com</small></p>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat corrupti <br>consequuntur minus qui distinctio iusto in veniam nobis asperiores<br> neque ullam, a eaque! Voluptatem quo alias dolores recusandae eum.</p>
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" width="500" src="imagenes/laravel.png" alt="laravel">
+            </figure>
+        </article>
+        <article class="project"> <!--project seria el objeto OOCSS-->
+            <div class="project-details">
+                <h3 class="project-title">Platzi video</h3>
+                <h6 class="project-course">react native</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/04/2020</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong>platzi.com</small></p>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat corrupti <br>consequuntur minus qui distinctio iusto in veniam nobis asperiores<br> neque ullam, a eaque! Voluptatem quo alias dolores recusandae eum.</p>
+            </div>
+            <figure class="project-imageContainer">
+                <img class="project-image" width="500" src="imagenes/laravel.png" alt="laravel">
+            </figure>
+        </article>
+    </section>
+    <section id="Experiencia">
+        <h2>Experiencia</h2>
+        <article class="Experience">
+            <figure class="Experience-imageContainer">
+                <img src="imagenes/angulart.jpg" alt="angular">
+            </figure>
+            <h3 class="Experience-tile">Laravel</h3>
+            <p class="Experience-description">EXPERIENCIA CON ANGULAR</h6>
+        </article>
+    </section>
+    <section id="contacto" class="contact"> <!--el id es para identificar solo la etiqueta-->
+        <form action="/suscripcion" class="form-email">
+        <h3>Creamos algo juntos</h3>
+        <label for="email">Dejame tu email</label> <!--for es enlace al id de otra etiqueta-->
+        <input type="text" placeholder="deja tu email" id="email">
+        <!--<input type="submit" value="Enviar">-->
+        <button>Enviar</button>
+        </form>
+    </section>
+    <section>
+        <footer class="footer">footer</footer></footer>
+    </section>
+</body>
+</html>

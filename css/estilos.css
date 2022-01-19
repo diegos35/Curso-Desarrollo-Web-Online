@@ -1,0 +1,121 @@
+/* reglas
+selectores: identificar 1 o mas elementos de nuestro Html
+declaraciones
+propiedades
+valores de css */
+
+/*
+
+(SELECTOR header) (Declaracion ->{
+ Propiedad--->  background:pink    <--- valor  !important; 
+}) */
+
+/* header{
+    background:pink !important;
+} */
+
+/*selector de etiquetas header --section --article --nav */
+/*selector descendente para llegar a la etiqueta A 
+  body header div nav ol li a  */
+
+/*SELECTOR DE CLASE: se identifica con un punto .link */
+
+/*SELECTOR DE ID: se identifica con #contacto*/
+
+body{
+  font-family: 'source Sans Pro', sans-serif;
+  margin: 0px;
+}
+
+h1, /* la coma es para dferentes tipos de selectores */
+h2,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  /*font-style: italic; Curisva */
+}
+
+h1{
+  font-size: 40px; /*tamaño de fuente*/
+  line-height: 150%; /*alto de elinea*/
+  letter-spacing: -.2px; /*espacio entre letras*/
+  color: white;
+  margin: 100px 150px 70px 30px; /*TOP RIGHT BOTTOM LEFT*/
+  /* text-transform: uppercase;   */
+  /* text-decoration: underline;/* subrayar */
+} 
+
+h1 strong{
+  color:#02ffff;
+  
+}
+
+.hero{
+  height: 300px;
+  background-image: url('../imagenes/pwa.jpeg'); /*ruta relativa o ruta absoluta*/
+  background-size: 500px, 300px; /*recibe dos parametros el allto y el ancho*/
+  background-color:#1b2127;
+  background-repeat: no-repeat; /*para que no se repita la imagen*/
+  background-position-x: right; /*va a estar desde la derecha*/
+}
+
+.portfolio{
+  background:#fafafa;
+}
+.project{
+  /* border-top: borde en la parte superior  */
+  /*border-top:10px solid red; /*TAMAÑO TIPO ESTILO
+  border-right:10px solid green; 
+  border-left: 10px solid orange;
+  border-bottom:10px solid pink;*/
+  /* border-color:red;
+  border-width:10px;
+  border-style: solid; */
+  border: 1px solid gray; /* cuadro redondo*/
+  border-radius:10px; /*borde redodenado*/
+  /* border-top-left-radius: 50px; */
+  /* border-top-rightradius: 10px; */
+  margin: 10px;
+  margin-bottom: 15px; /* separacion de los elementos projects */
+  /* margin-right: 0%; */
+  padding: 20px; /*Relleno dentro del borde*/
+  background:white
+}
+
+.project-details {
+  width:500px;
+}
+
+.project-imageContainer{
+  width:500px;
+}
+
+.header {
+  background-color:#1b2127;
+  color:white;
+}
+
+.header a { /*todas las anclas que estan dentro de header*/
+  color: white;
+  text-decoration:none; 
+}
+
+.flexbox{
+display: flex;
+/* flex-wrap: nowrap; */
+flex-wrap:wrap;
+/*flex-direction: column; /*una sola columna o una sola fila ROW COLUMN*/
+}
+
+.box{
+  width:200px;
+  height: 200px;
+  margin: 20px;
+  border: 1px solid red;
+  flex-shrink: 0; /*sin modificar el tamallo   Valores entre 0-1*/ 
+}
